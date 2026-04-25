@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="駅伝コース">
+<title>第70回山形県縦断駅伝コース</title>
+<style>
+  :root {
+    --bg:#f7f8fb; --fg:#1a1a1a; --muted:#666; --line:#e1e5ec;
+    --head:#1f4e78; --head-fg:#fff; --finish:#fff2cc; --section:#d9e1f2;
+    --link:#0563c1; --link-visited:#054a99; --tab-bg:#fff; --tab-active:#1f4e78;
+  }
+  * { box-sizing:border-box; -webkit-tap-highlight-color: rgba(0,0,0,0.06); }
+  html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    font-size:16px; line-height:1.5; padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  header {
+    position:sticky; top:0; z-index:10;
+    background:var(--head); color:var(--head-fg);
+    padding:12px 16px 0;
+  }
+  header h1 { margin:0 0 8px; font-size:17px; font-weight:600; letter-spacing:.02em;}
+  header .sub { font-size:12px; opacity:.8; margin-bottom:10px;}
+  nav.tabs {
+    display:flex; gap:6px; overflow-x:auto; padding-bottom:10px;
+    -webkit-overflow-scrolling:touch;
+  }
+  nav.tabs button {
+    flex:0 0 auto;
+    appearance:none; border:0;
+    background:rgba(255,255,255,.15); color:#fff;
+    font:inherit; padding:10px 16px; border-radius:999px;
+    min-height:44px; cursor:pointer;
+  }
+  nav.tabs button[aria-selected="true"] { background:#fff; color:var(--tab-active); font-weight:600; }
+  main { padding:8px 8px 32px; }
+  section { display:none; }
+  section.active { display:block; }
+  table { width:100%; border-collapse:separate; border-spacing:0; background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  thead th {
+    background:var(--head); color:var(--head-fg);
+    font-weight:600; font-size:13px; text-align:left;
+    padding:10px 10px;
+    border-bottom:1px solid var(--line);
+  }
+  tbody td { padding:14px 10px; border-bottom:1px solid var(--line); vertical-align:middle; }
+  tbody tr:last-child td { border-bottom:0; }
+  td.t { font-variant-numeric: tabular-nums; font-weight:600; white-space:nowrap; width:84px; }
+  td.n { color:var(--muted); white-space:nowrap; }
+  td.p { }
+  td.p a {
+    display:block; min-height:44px; padding:6px 0;
+    color:var(--link); text-decoration:underline; font-weight:600;
+    word-break:break-word;
+  }
+  td.p a:visited { color:var(--link-visited); }
+  tr.finish td { background:var(--finish); }
+  tr.section td {
+    background:var(--section); color:var(--head);
+    font-weight:700; text-align:center; padding:10px;
+  }
+  footer { color:var(--muted); font-size:12px; text-align:center; padding:16px; }
+  @media (max-width: 380px) {
+    body { font-size:15px; }
+    td.t { width:72px; }
+    thead th { font-size:12px; }
+    tbody td { padding:12px 8px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>第70回 山形県縦断駅伝</h1>
+  <div class="sub">配置場所をタップで Google Maps を起動</div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="d1">1日目</button>
+    <button role="tab" aria-selected="false" data-tab="d2">2日目</button>
+    <button role="tab" aria-selected="false" data-tab="d3">3日目</button>
+    <button role="tab" aria-selected="false" data-tab="all">全日程</button>
+  </nav>
+</header>
+<main>
+  <section id="d1" class="active">
+    <table>
+      <thead>
+        <tr><th class="t">先頭通過時刻</th><th class="n">中継所</th><th class="p">配置場所</th></tr>
+      </thead>
+      <tbody>
+      <tr><td class="t">08:20</td><td class="n">遊佐スタート</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%81%8A%E4%BD%90%E6%9C%88%E5%85%89%E6%A9%8B" target="_blank" rel="noopener">遊佐月光橋</a></td></tr>
+      <tr><td class="t">09:11</td><td class="n">酒田中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%85%92%E7%94%B0%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">酒田市役所</a></td></tr>
+      <tr><td class="t">09:41</td><td class="n">黒森中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%28%E6%A0%AA%29%E9%87%91%E9%BE%8D" target="_blank" rel="noopener">(株)金龍</a></td></tr>
+      <tr><td class="t">10:13</td><td class="n">湯野浜中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%B9%AF%E9%87%8E%E6%B5%9C%E6%B5%B7%E6%B5%9C%E9%81%8B%E5%8B%95%E5%A0%B4" target="_blank" rel="noopener">湯野浜海浜運動場</a></td></tr>
+      <tr><td class="t">10:36</td><td class="n">大山中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%A4%A7%E5%B1%B1%E9%83%B5%E4%BE%BF%E5%B1%80" target="_blank" rel="noopener">大山郵便局</a></td></tr>
+      <tr><td class="t">10:56</td><td class="n">鶴岡中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%B6%B4%E5%B2%A1%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">鶴岡市役所</a></td></tr>
+      <tr><td class="t">11:24</td><td class="n">藤島中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E8%97%A4%E5%B3%B6%E5%BA%81%E8%88%8E" target="_blank" rel="noopener">藤島庁舎</a></td></tr>
+      <tr><td class="t">11:47</td><td class="n">狩川中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E7%AB%8B%E5%B7%9D%E5%B0%8F" target="_blank" rel="noopener">立川小</a></td></tr>
+      <tr><td class="t">12:46</td><td class="n">古口中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%8F%A4%E5%8F%A3%E9%99%A4%E9%9B%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank" rel="noopener">古口除雪ステーション</a></td></tr>
+      <tr><td class="t">13:15</td><td class="n">升形中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%8D%87%E5%BD%A2%E5%85%AC%E6%B0%91%E9%A4%A8" target="_blank" rel="noopener">升形公民館</a></td></tr>
+      <tr><td class="t">13:34</td><td class="n">鮭川中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+JA%E3%81%8A%E3%81%84%E3%81%97%E3%81%84%E3%82%82%E3%81%8C%E3%81%BF%E9%AE%AD%E5%B7%9D%E6%94%AF%E5%BA%97" target="_blank" rel="noopener">JAおいしいもがみ鮭川支店</a></td></tr>
+      <tr class="finish"><td class="t">14:05</td><td class="n">1日目フィニッシュ</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%96%B0%E5%BA%84%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">新庄市役所</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="d2">
+    <table>
+      <thead>
+        <tr><th class="t">先頭通過時刻</th><th class="n">中継所</th><th class="p">配置場所</th></tr>
+      </thead>
+      <tbody>
+      <tr><td class="t">08:20</td><td class="n">新庄スタート</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%96%B0%E5%BA%84%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">新庄市役所</a></td></tr>
+      <tr><td class="t">08:47</td><td class="n">舟形中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E8%88%9F%E5%BD%A2%E9%83%B5%E4%BE%BF%E5%B1%80" target="_blank" rel="noopener">舟形郵便局</a></td></tr>
+      <tr><td class="t">09:29</td><td class="n">尾花沢中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B0%BE%E8%8A%B1%E6%B2%A2%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">尾花沢市役所</a></td></tr>
+      <tr><td class="t">10:24</td><td class="n">村山中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%BA%94%E6%97%A5%E7%94%BA%E5%85%AC%E5%9C%92" target="_blank" rel="noopener">五日町公園</a></td></tr>
+      <tr><td class="t">10:44</td><td class="n">東根中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%9D%B1%E6%A0%B9%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">東根市役所</a></td></tr>
+      <tr><td class="t">11:09</td><td class="n">天童中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%A4%A9%E7%AB%A5%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">天童市役所</a></td></tr>
+      <tr><td class="t">11:45</td><td class="n">寒河江中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%85%AD%E4%BE%9B%E7%94%BA%E5%85%AC%E6%B0%91%E9%A4%A8" target="_blank" rel="noopener">六供町公民館</a></td></tr>
+      <tr><td class="t">12:08</td><td class="n">大江中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B7%A6%E6%B2%A2%E6%A9%8B" target="_blank" rel="noopener">左沢橋</a></td></tr>
+      <tr><td class="t">12:43</td><td class="n">朝日中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%AE%AE%E5%AE%BF%E9%83%B5%E4%BE%BF%E5%B1%80" target="_blank" rel="noopener">宮宿郵便局</a></td></tr>
+      <tr><td class="t">13:35</td><td class="n">白鷹中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E7%99%BD%E9%B7%B9%E7%94%BA%E5%BD%B9%E5%A0%B4" target="_blank" rel="noopener">白鷹町役場</a></td></tr>
+      <tr class="finish"><td class="t">14:12</td><td class="n">2日目フィニッシュ</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%95%B7%E4%BA%95%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">長井市役所</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="d3">
+    <table>
+      <thead>
+        <tr><th class="t">先頭通過時刻</th><th class="n">中継所</th><th class="p">配置場所</th></tr>
+      </thead>
+      <tbody>
+      <tr><td class="t">08:00</td><td class="n">長井スタート</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%95%B7%E4%BA%95%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">長井市役所</a></td></tr>
+      <tr><td class="t">08:39</td><td class="n">川西中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B7%9D%E8%A5%BF%E3%81%BE%E3%81%A1%E3%81%AA%E3%81%8B%E3%83%86%E3%83%A9%E3%82%B9" target="_blank" rel="noopener">川西まちなかテラス</a></td></tr>
+      <tr><td class="t">09:18</td><td class="n">米沢中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E7%B1%B3%E6%B2%A2%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">米沢市役所</a></td></tr>
+      <tr><td class="t">09:28</td><td class="n">上郷中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%B8%8A%E9%83%B7%E5%B0%8F" target="_blank" rel="noopener">上郷小</a></td></tr>
+      <tr><td class="t">09:46</td><td class="n">亀岡中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%BA%80%E5%B2%A1%E6%96%87%E6%AE%8A%E5%8F%82%E9%81%93%E5%8F%A3" target="_blank" rel="noopener">亀岡文殊参道口</a></td></tr>
+      <tr><td class="t">09:59</td><td class="n">高畠中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%AB%98%E7%95%A0%E7%94%BA%E6%96%87%E5%8C%96%E3%83%9B%E3%83%BC%E3%83%AB" target="_blank" rel="noopener">高畠町文化ホール</a></td></tr>
+      <tr><td class="t">10:25</td><td class="n">南陽中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%8D%97%E9%99%BD%E5%B8%82%E3%81%88%E3%81%8F%E3%81%BC%E3%83%97%E3%83%A9%E3%82%B6" target="_blank" rel="noopener">南陽市えくぼプラザ</a></td></tr>
+      <tr><td class="t">11:16</td><td class="n">上山中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%B8%8A%E5%B1%B1%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">上山市役所</a></td></tr>
+      <tr class="finish"><td class="t">11:58</td><td class="n">フィニッシュ</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B1%B1%E5%BD%A2%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%82%BF%E3%83%AF%E3%83%BC" target="_blank" rel="noopener">山形メディアタワー</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="all">
+    <table>
+      <thead>
+        <tr><th class="t">先頭通過時刻</th><th class="n">中継所</th><th class="p">配置場所</th></tr>
+      </thead>
+      <tbody>
+        <tr class="section"><td colspan="3">【1日目】</td></tr>
+      <tr><td class="t">08:20</td><td class="n">遊佐スタート</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%81%8A%E4%BD%90%E6%9C%88%E5%85%89%E6%A9%8B" target="_blank" rel="noopener">遊佐月光橋</a></td></tr>
+      <tr><td class="t">09:11</td><td class="n">酒田中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%85%92%E7%94%B0%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">酒田市役所</a></td></tr>
+      <tr><td class="t">09:41</td><td class="n">黒森中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%28%E6%A0%AA%29%E9%87%91%E9%BE%8D" target="_blank" rel="noopener">(株)金龍</a></td></tr>
+      <tr><td class="t">10:13</td><td class="n">湯野浜中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%B9%AF%E9%87%8E%E6%B5%9C%E6%B5%B7%E6%B5%9C%E9%81%8B%E5%8B%95%E5%A0%B4" target="_blank" rel="noopener">湯野浜海浜運動場</a></td></tr>
+      <tr><td class="t">10:36</td><td class="n">大山中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%A4%A7%E5%B1%B1%E9%83%B5%E4%BE%BF%E5%B1%80" target="_blank" rel="noopener">大山郵便局</a></td></tr>
+      <tr><td class="t">10:56</td><td class="n">鶴岡中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%B6%B4%E5%B2%A1%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">鶴岡市役所</a></td></tr>
+      <tr><td class="t">11:24</td><td class="n">藤島中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E8%97%A4%E5%B3%B6%E5%BA%81%E8%88%8E" target="_blank" rel="noopener">藤島庁舎</a></td></tr>
+      <tr><td class="t">11:47</td><td class="n">狩川中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E7%AB%8B%E5%B7%9D%E5%B0%8F" target="_blank" rel="noopener">立川小</a></td></tr>
+      <tr><td class="t">12:46</td><td class="n">古口中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%8F%A4%E5%8F%A3%E9%99%A4%E9%9B%AA%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank" rel="noopener">古口除雪ステーション</a></td></tr>
+      <tr><td class="t">13:15</td><td class="n">升形中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%8D%87%E5%BD%A2%E5%85%AC%E6%B0%91%E9%A4%A8" target="_blank" rel="noopener">升形公民館</a></td></tr>
+      <tr><td class="t">13:34</td><td class="n">鮭川中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+JA%E3%81%8A%E3%81%84%E3%81%97%E3%81%84%E3%82%82%E3%81%8C%E3%81%BF%E9%AE%AD%E5%B7%9D%E6%94%AF%E5%BA%97" target="_blank" rel="noopener">JAおいしいもがみ鮭川支店</a></td></tr>
+      <tr class="finish"><td class="t">14:05</td><td class="n">1日目フィニッシュ</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%96%B0%E5%BA%84%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">新庄市役所</a></td></tr>
+        <tr class="section"><td colspan="3">【2日目】</td></tr>
+      <tr><td class="t">08:20</td><td class="n">新庄スタート</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%96%B0%E5%BA%84%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">新庄市役所</a></td></tr>
+      <tr><td class="t">08:47</td><td class="n">舟形中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E8%88%9F%E5%BD%A2%E9%83%B5%E4%BE%BF%E5%B1%80" target="_blank" rel="noopener">舟形郵便局</a></td></tr>
+      <tr><td class="t">09:29</td><td class="n">尾花沢中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B0%BE%E8%8A%B1%E6%B2%A2%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">尾花沢市役所</a></td></tr>
+      <tr><td class="t">10:24</td><td class="n">村山中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%BA%94%E6%97%A5%E7%94%BA%E5%85%AC%E5%9C%92" target="_blank" rel="noopener">五日町公園</a></td></tr>
+      <tr><td class="t">10:44</td><td class="n">東根中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E6%9D%B1%E6%A0%B9%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">東根市役所</a></td></tr>
+      <tr><td class="t">11:09</td><td class="n">天童中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%A4%A9%E7%AB%A5%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">天童市役所</a></td></tr>
+      <tr><td class="t">11:45</td><td class="n">寒河江中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%85%AD%E4%BE%9B%E7%94%BA%E5%85%AC%E6%B0%91%E9%A4%A8" target="_blank" rel="noopener">六供町公民館</a></td></tr>
+      <tr><td class="t">12:08</td><td class="n">大江中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B7%A6%E6%B2%A2%E6%A9%8B" target="_blank" rel="noopener">左沢橋</a></td></tr>
+      <tr><td class="t">12:43</td><td class="n">朝日中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%AE%AE%E5%AE%BF%E9%83%B5%E4%BE%BF%E5%B1%80" target="_blank" rel="noopener">宮宿郵便局</a></td></tr>
+      <tr><td class="t">13:35</td><td class="n">白鷹中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E7%99%BD%E9%B7%B9%E7%94%BA%E5%BD%B9%E5%A0%B4" target="_blank" rel="noopener">白鷹町役場</a></td></tr>
+      <tr class="finish"><td class="t">14:12</td><td class="n">2日目フィニッシュ</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%95%B7%E4%BA%95%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">長井市役所</a></td></tr>
+        <tr class="section"><td colspan="3">【3日目】</td></tr>
+      <tr><td class="t">08:00</td><td class="n">長井スタート</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%95%B7%E4%BA%95%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">長井市役所</a></td></tr>
+      <tr><td class="t">08:39</td><td class="n">川西中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B7%9D%E8%A5%BF%E3%81%BE%E3%81%A1%E3%81%AA%E3%81%8B%E3%83%86%E3%83%A9%E3%82%B9" target="_blank" rel="noopener">川西まちなかテラス</a></td></tr>
+      <tr><td class="t">09:18</td><td class="n">米沢中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E7%B1%B3%E6%B2%A2%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">米沢市役所</a></td></tr>
+      <tr><td class="t">09:28</td><td class="n">上郷中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%B8%8A%E9%83%B7%E5%B0%8F" target="_blank" rel="noopener">上郷小</a></td></tr>
+      <tr><td class="t">09:46</td><td class="n">亀岡中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%BA%80%E5%B2%A1%E6%96%87%E6%AE%8A%E5%8F%82%E9%81%93%E5%8F%A3" target="_blank" rel="noopener">亀岡文殊参道口</a></td></tr>
+      <tr><td class="t">09:59</td><td class="n">高畠中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E9%AB%98%E7%95%A0%E7%94%BA%E6%96%87%E5%8C%96%E3%83%9B%E3%83%BC%E3%83%AB" target="_blank" rel="noopener">高畠町文化ホール</a></td></tr>
+      <tr><td class="t">10:25</td><td class="n">南陽中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%8D%97%E9%99%BD%E5%B8%82%E3%81%88%E3%81%8F%E3%81%BC%E3%83%97%E3%83%A9%E3%82%B6" target="_blank" rel="noopener">南陽市えくぼプラザ</a></td></tr>
+      <tr><td class="t">11:16</td><td class="n">上山中継所</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E4%B8%8A%E5%B1%B1%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener">上山市役所</a></td></tr>
+      <tr class="finish"><td class="t">11:58</td><td class="n">フィニッシュ</td><td class="p"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E5%BD%A2%E7%9C%8C+%E5%B1%B1%E5%BD%A2%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%82%BF%E3%83%AF%E3%83%BC" target="_blank" rel="noopener">山形メディアタワー</a></td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+<footer>data: 大会プログラム / map link: maps.google.com</footer>
+<script>
+(function(){
+  var btns = document.querySelectorAll('nav.tabs button');
+  var secs = document.querySelectorAll('main > section');
+  function activate(id){
+    btns.forEach(function(b){ b.setAttribute('aria-selected', b.dataset.tab===id ? 'true':'false'); });
+    secs.forEach(function(s){ s.classList.toggle('active', s.id===id); });
+    try { history.replaceState(null,'','#'+id); } catch(e){}
+    window.scrollTo({top:0});
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ activate(b.dataset.tab); }); });
+  var h = (location.hash||'').replace('#','');
+  if (h && document.getElementById(h)) activate(h);
+})();
+</script>
+</body>
+</html>
