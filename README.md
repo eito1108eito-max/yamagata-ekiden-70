@@ -1,2 +1,2 @@
-# yamagata-ekiden-70
-ekiden
+# eitoAI
+eitosato08
